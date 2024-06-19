@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav_title">
+            <h1>Christopher</h1>
+            <a href=""><i class="fas fa-envelope"></i> Test@gmail.com</a>
+            <a href=""><i class="fas fa-phone"></i> +2774 0000 000</a>
+          </li>
+          <li style="float: right">
+            <a class="active" href="#about">About Me</a>
+          </li>
+          <li style="float: right">
+            <a class="active" href="#skills">Skills</a>
+          </li>
+          <li style="float: right">
+            <a class="active" href="#project">Projects</a>
+          </li>
+          <li style="float: right">
+            <a class="active" href="#recommendations">Recommendations</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About section -->
+      <section id="about">
+        <div class="row">
+          <div class="column">
+            <img src="./assets/user.png" alt="" />
+          </div>
+          <div class="column" id="col_id">
+            <h1>Hi, I'm Christopher Mohale</h1>
+            <p>
+              With over 5 years of experience in React, and other cutting-edge
+              technologies, I am well-equipped to collaborate with
+              cross-functional teams and deliver impactful solutions. My
+              proficiency in optimizing code performance, working closely with
+              project management and solution architects, and adhering to
+              industry standards make me a valuable asset for driving digital
+              innovation. I am excited about the opportunity to contribute to
+              transformative projects and help clients navigate the challenges
+              of today's digital landscape
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills section -->
+
+      <section id="skills">
+        <div class="title">
+          <h1>Skills</h1>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img class="img_icon" src="./assets/html.png" alt="" />
+              <h2>HTML</h2>
+              <h1>5 years experience</h1>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img class="img_icon" src="./assets/css (1).png" alt="" />
+              <h2>CSS</h2>
+              <h1>5 years experience</h1>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img class="img_icon" src="./assets/javascript.png" alt="" />
+              <h2>Javascript</h2>
+              <h1>5 years experience</h1>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img class="img_icon" src="./assets/react.png" alt="" />
+              <h2>React JS</h2>
+              <h1>5 years experience</h1>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img class="img_icon" src="./assets/laravel.png" alt="" />
+              <h2>Laravel</h2>
+              <h1>5 years experience</h1>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img class="img_icon" src="./assets/aws.png" alt="" />
+              <h2>AWS Web Services</h2>
+              <h1>5 years experience</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project section -->
+      <section id="project">
+        <div class="title">
+          <h1>Projects</h1>
+        </div>
+        <!--  -->
+        <div class="project_data">
+          <h3>IoT Application for Smart Homes</h3>
+          <ul>
+            <li>
+              Developed a secure and user-friendly IoT application for
+              controlling smart home devices. Utilized AWS services, including
+              DynamoDB, to ensure scalability and reliability
+            </li>
+          </ul>
+        </div>
+
+        <!--  -->
+        <div class="project_data">
+          <h3>Custom Dashboards for GPS Tracking and Theft Detection</h3>
+          <ul>
+            <li>
+              Created custom dashboards for logistics and retail companies to
+              monitor GPS tracking devices. Implemented real-time tracking,
+              analytics, and alerting features.
+            </li>
+          </ul>
+        </div>
+
+        <!--  -->
+        <div class="project_data">
+          <h3>Real Estate Security Dashboards</h3>
+          <ul>
+            <li>
+              Designed dashboards for real estate companies to monitor theft and
+              tamper detections for electric and water meters. Integrated
+              machine learning algorithms for anomaly detection.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Recommendations section -->
+      <section id="recommendations">
+        <div class="title">
+          <h1>Recommendations</h1>
+        </div>
+
+        <div class="row">
+          <div id="recommendationContainer" class="recommendation-container">
+            <!-- Testimonials will be dynamically added here -->
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="form">
+          <form id="recommendationForm">
+            <input type="text" id="nameInput" placeholder="Name (Optional)" />
+            <br />
+            <textarea rows="5" name="" id="feedbackInput">Message</textarea>
+            <br />
+            <br />
+            <button class="button" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <div id="popupModal" class="modal">
+        <div class="modal-content">
+          <span class="close"> <div class="close_main">&times;</div></span>
+
+          <p id="popupMessage">Recommendation added successfully!</p>
+          <button class="button_">OK</button>
+        </div>
+      </div>
+
+      <!-- Floating button -->
+      <section>
+        <a href="#" class="float-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="blue"
+            width="63px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/db2059466e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
